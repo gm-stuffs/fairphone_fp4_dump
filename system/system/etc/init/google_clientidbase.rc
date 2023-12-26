@@ -1,0 +1,779 @@
+#on property:persist.ril.sim.operator=*
+#    exec u:r:tctd:s0 system system -- /vendor/bin/clientidbase_util
+
+
+#on property:persist.ril.sim.operator=* && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+#    setprop ro.com.google.clientidbase.wal android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+#    setprop ro.com.google.clientidbase.cr android-alcatel
+#    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+
+on property:persist.ril.sim.operator=americamovil && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.operator=att && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+on property:persist.ril.sim.operator=attmexico && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+on property:persist.ril.sim.operator=beeline && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.am android-vimpelcom-ru
+
+on property:persist.ril.sim.operator=bell && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+on property:persist.ril.sim.operator=boostdish && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+on property:persist.ril.sim.operator=bouygues && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+###need to work
+#on property:persist.ril.sim.operator=bouygues && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+on property:persist.ril.sim.operator=charter && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+on property:persist.ril.sim.operator=cht && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+on property:persist.ril.sim.operator=cricket && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}
+
+on property:persist.ril.sim.operator=docomo && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+# Carrier EE begin
+on property:persist.ril.sim.operator=ee && property:persist.ril.sim.country=gb
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-uk-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-uk-revc
+# Carrier EE begin
+
+###need to work
+#on property:persist.ril.sim.operator=ee && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+on property:persist.ril.sim.operator=fi && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}
+
+on property:persist.ril.sim.operator=rogers && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}
+
+on property:persist.ril.sim.operator=free && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+on property:persist.ril.sim.operator=h3g && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+
+###need to work
+#on property:persist.ril.sim.operator=h3g && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+on property:persist.ril.sim.operator=kddi && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+###need to work
+#on property:persist.ril.sim.operator=kddi && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.operator=kt && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.operator=lgu && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.operator=meo && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+on property:persist.ril.sim.operator=mpcs && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+
+on property:persist.ril.sim.operator=mtn && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+
+on property:persist.ril.sim.operator=optus && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+#[BUG]-Modify-Begin by renjie.zhang 2021-08-11 [FP4-1775]Client ID for orange
+on property:persist.ril.sim.mcc.mnc=20801
+    setprop ro.com.google.clientidbase.ms android-orange-${persist.ril.sim.country}-rvc3
+    setprop ro.com.google.clientidbase.vs android-orange-${persist.ril.sim.country}-rvc3
+    setprop ro.product.brand1 orange
+
+on property:persist.ril.sim.mcc.mnc=21403
+    setprop ro.com.google.clientidbase.ms android-orange-${persist.ril.sim.country}-rvc3
+    setprop ro.com.google.clientidbase.vs android-orange-${persist.ril.sim.country}-rvc3
+    setprop ro.product.brand1 orange
+
+on property:persist.ril.sim.mcc.mnc=20610
+    setprop ro.com.google.clientidbase.ms android-orange-${persist.ril.sim.country}-rvc3
+    setprop ro.com.google.clientidbase.vs android-orange-${persist.ril.sim.country}-rvc3
+    setprop ro.product.brand1 orange
+#[BUG]-Modify-End by renjie.zhang
+
+###need to work
+#on property:persist.ril.sim.operator=orange && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+#    setprop ro.product.brand1 orange
+
+
+
+on property:persist.ril.sim.operator=outremer && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+on property:persist.ril.sim.operator=rogers && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+
+on property:persist.ril.sim.operator=sfr && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+on property:persist.ril.sim.operator=skt && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.operator=softbank && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.operator=srr && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+on property:persist.ril.sim.operator=tdg && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+#on property:persist.ril.sim.operator=dt && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=23203 && property:persist.ril.sim.gid1=01FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=23203 && property:persist.ril.sim.gid1=31FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=23203 && property:persist.ril.sim.gid1=32FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.mcc.mnc=23207 && property:persist.ril.sim.gid1=07FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=23207 && property:persist.ril.sim.gid1=30FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=23207 && property:persist.ril.sim.gid1=FFFFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.mcc.mnc=23001
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+    
+# Carrier DE begin
+on property:persist.ril.sim.mcc.mnc=26201 && property:persist.ril.sim.gid1=01FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26201 &&  property:persist.ril.sim.gid1=02FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26201 && property:persist.ril.sim.gid1=03FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+    
+on property:persist.ril.sim.mcc.mnc=26201 && property:persist.ril.sim.gid1=04FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26201 && property:persist.ril.sim.gid1=99FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26201 && property:persist.ril.sim.gid1=4BFFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26201 && property:persist.ril.sim.operator=telekom.de
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26201 &&  property:persist.ril.sim.operator="T-Mobile D"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26201 && property:persist.ril.sim.operator=Business
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26201 && property:persist.ril.sim.operator=Privat
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+    
+on property:persist.ril.sim.mcc.mnc=26201 && property:persist.ril.sim.operator=T-Campus
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+    
+on property:persist.ril.sim.mcc.mnc=26206 && property:persist.ril.sim.gid1=01FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26206 &&  property:persist.ril.sim.gid1=02FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26206 && property:persist.ril.sim.gid1=03FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+    
+on property:persist.ril.sim.mcc.mnc=26206 && property:persist.ril.sim.gid1=04FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26206 && property:persist.ril.sim.gid1=99FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26206 && property:persist.ril.sim.gid1=4BFFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26206 && property:persist.ril.sim.operator=telekom.de
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26206 &&  property:persist.ril.sim.operator="T-Mobile D"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26206 && property:persist.ril.sim.operator=Business
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26206 && property:persist.ril.sim.operator=Privat
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+    
+on property:persist.ril.sim.mcc.mnc=26206 && property:persist.ril.sim.operator=T-Campus
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+    
+# Carrier DE END
+
+
+# Carrier HR begin
+on property:persist.ril.sim.mcc.mnc=21920 && property:persist.ril.sim.gid1=01FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21920 &&  property:persist.ril.sim.gid1=02FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21920 && property:persist.ril.sim.gid1=03FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21920 && property:persist.ril.sim.gid1=99FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21920 && property:persist.ril.sim.gid1=FFFFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21920 && property:persist.ril.sim.operator="T-Mobile HR"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21920 &&  property:persist.ril.sim.operator="HT HR"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21920 && property:persist.ril.sim.operator="R&D Network"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21920 && property:persist.ril.sim.operator=HT-Campus
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+    
+on property:persist.ril.sim.mcc.mnc=21901 && property:persist.ril.sim.gid1=01FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21901 &&  property:persist.ril.sim.gid1=02FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21901 && property:persist.ril.sim.gid1=03FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21901 && property:persist.ril.sim.gid1=99FFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21901 && property:persist.ril.sim.gid1=FFFFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21901 && property:persist.ril.sim.operator="T-Mobile HR"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21901 &&  property:persist.ril.sim.operator="HT HR"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21901 && property:persist.ril.sim.operator="R&D Network"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21901 && property:persist.ril.sim.operator=HT-Campus
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+# Carrier HR END
+
+# Carrier HU Begin
+on property:persist.ril.sim.mcc.mnc=21630
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+# Carrier HU END
+
+on property:persist.ril.sim.mcc.mnc=20201 && property:persist.ril.sim.gid1=FF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=20201 && property:persist.ril.sim.gid1=FFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=29401 && property:persist.ril.sim.gid1=FF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=29702
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+# Carrier NL Begin
+on property:persist.ril.sim.mcc.mnc=20416 && property:persist.ril.sim.gid1=FFFFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=20420 && property:persist.ril.sim.gid1=FFFFFFFF
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=20416 && property:persist.ril.sim.operator="T-Mobile NL"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=20420 && property:persist.ril.sim.operator="T-Mobile NL"
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+# Carrier NL END
+
+on property:persist.ril.sim.mcc.mnc=26002 && property:persist.ril.sim.gid1=11
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26002 && property:persist.ril.sim.gid1=12
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26002 && property:persist.ril.sim.gid1=16
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26002 && property:persist.ril.sim.gid1=17
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26002 && property:persist.ril.sim.gid1=21
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26002 && property:persist.ril.sim.gid1=22
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26002 && property:persist.ril.sim.gid1=23
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26002 && property:persist.ril.sim.gid1=24
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26002 && property:persist.ril.sim.gid1=26
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=22603
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=22606
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=23102
+    setprop ro.com.google.clientidbase.ms android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-dt-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+
+###need to work
+#on property:persist.ril.sim.operator=dt && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc3
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc3
+#    setprop ro.com.google.clientidbase.am android-tmobile-${persist.ril.sim.country}
+#    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+on property:persist.ril.sim.operator=tmus && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+
+on property:persist.ril.sim.operator=twm && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+    setprop ro.com.google.clientidbase.wal android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+    setprop ro.com.google.clientidbase.cr android-alcatel
+    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+
+# Carrier Telefonica begin
+
+on property:persist.ril.sim.mcc.mnc=21405 && property:persist.ril.sim.country=es
+    setprop ro.com.google.clientidbase.ms android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tef-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=21407 && property:persist.ril.sim.country=es
+    setprop ro.com.google.clientidbase.ms android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tef-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26203 && property:persist.ril.sim.country=de
+    setprop ro.com.google.clientidbase.ms android-tef-${persist.ril.sim.country}-rvc2
+    setprop ro.com.google.clientidbase.vs android-tef-${persist.ril.sim.country}-rvc2
+    setprop ro.com.google.clientidbase.am android-tef-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26207 && property:persist.ril.sim.country=de
+    setprop ro.com.google.clientidbase.ms android-tef-${persist.ril.sim.country}-rvc2
+    setprop ro.com.google.clientidbase.vs android-tef-${persist.ril.sim.country}-rvc2
+    setprop ro.com.google.clientidbase.am android-tef-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26205 && property:persist.ril.sim.country=de
+    setprop ro.com.google.clientidbase.ms android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tef-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=26277 && property:persist.ril.sim.country=de
+    setprop ro.com.google.clientidbase.ms android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tef-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=23402 && property:persist.ril.sim.country=gb
+    setprop ro.com.google.clientidbase.ms android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tef-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=23410 && property:persist.ril.sim.country=gb
+    setprop ro.com.google.clientidbase.ms android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tef-${persist.ril.sim.country}
+
+on property:persist.ril.sim.mcc.mnc=23411 && property:persist.ril.sim.country=gb
+    setprop ro.com.google.clientidbase.ms android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-tef-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-tef-${persist.ril.sim.country}
+
+# Carrier Telefonica END
+
+
+###need to work
+#on property:persist.ril.sim.operator=tef && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+on property:persist.ril.sim.operator=telenorapac && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+
+on property:persist.ril.sim.operator=telenor && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+
+on property:persist.ril.sim.operator=telstra && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+    setprop ro.com.google.clientidbase.wal android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.operator=telus && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+
+on property:persist.ril.sim.operator=tim && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+
+###need to work
+#on property:persist.ril.sim.operator=tim && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+on property:persist.ril.sim.operator=uscellular && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.operator=verizon && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-verizon
+    setprop ro.com.google.clientidbase.vs android-verizon
+    setprop ro.com.google.clientidbase.am android-verizon
+
+### Vodafone CZ
+#on property:persist.ril.sim.mcc.mnc=23003
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+#on property:persist.ril.sim.mcc.mnc=23099
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone DE
+#on property:persist.ril.sim.mcc.mnc=26202 && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone HU
+#on property:persist.ril.sim.mcc.mnc=21670 && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone IE
+#on property:persist.ril.sim.mcc.mnc=27201 && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone IT
+#on property:persist.ril.sim.mcc.mnc=22210 && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone NL
+#on property:persist.ril.sim.mcc.mnc=20404 && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone PT
+#on property:persist.ril.sim.mcc.mnc=26801 && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone ZA
+#on property:persist.ril.sim.mcc.mnc=65501 && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone ES
+#on property:persist.ril.sim.mcc.mnc=21401 && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone TR
+#on property:persist.ril.sim.mcc.mnc=28602 && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+### Vodafone GB
+#on property:persist.ril.sim.mcc.mnc=23415
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+#on property:persist.ril.sim.mcc.mnc=23591
+#    setprop ro.com.google.clientidbase.ms android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.vs android-vf-${persist.ril.sim.country}-rvc2
+#    setprop ro.com.google.clientidbase.am android-vf-${persist.ril.sim.country}
+
+
+###need to work
+#on property:persist.ril.sim.operator=vf && property:persist.ril.sim.country=*
+#    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+#    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+on property:persist.ril.sim.operator=virgin && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.am android-${persist.ril.sim.operator}-${persist.ril.sim.country}
+
+
+on property:persist.ril.sim.operator=mas && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.pg android-${persist.ril.sim.operator}-gtmp
+
+
+on property:persist.ril.sim.operator=comcast && property:persist.ril.sim.country=*
+    setprop ro.com.google.clientidbase.ms android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+    setprop ro.com.google.clientidbase.vs android-${persist.ril.sim.operator}-${persist.ril.sim.country}-revc
+
+on property:persist.ril.sim.mcc.mnc=20820 && property:persist.ril.sim.country=fr
+    setprop ro.com.google.clientidbase.ms android-bouygues-fr-rvc3
+    setprop ro.com.google.clientidbase.vs android-bouygues-fr-rvc3
