@@ -1,0 +1,14 @@
+# qssi-user 13 TKQ1.230127.002 TP1V release-keys
+- manufacturer: fairphone
+- platform: lito
+- codename: FP4
+- flavor: qssi-user
+- release: 13
+- id: TKQ1.230127.002
+- incremental: TP1V
+- tags: release-keys
+- fingerprint: Fairphone/FP4eea/FP4:12/SKQ1.220201.001/TP1V:user/release-keys
+- is_ab: true
+- brand: Fairphone
+- branch: qssi-user-13-TKQ1.230127.002-TP1V-release-keys
+- repo: fairphone_fp4_dump
