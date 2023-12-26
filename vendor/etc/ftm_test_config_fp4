@@ -1,0 +1,719 @@
+tc 55
+# button mic1(AMIC1) to Left Rcv
+# AFE loopback button mic to Left Rcv
+
+!AfeLoop
+LoopVol:55
+Txdevice:31
+Rxdevice:30
+
+enable
+TX_DEC1 Volume:102
+TX DEC1 MUX:SWR_MIC
+TX SMIC MUX1:ADC0
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC1:1
+ADC1_MIXER Switch:1
+
+aw882xx_mode_switch_l:Rcv
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC1 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC1 MUX:ZERO
+TX SMIC MUX1:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC1:0
+ADC1_MIXER Switch:0
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+
+
+tc 56
+# mic2(AMIC2) to Left Rcv
+# AFE loopback mic2 to Left Rcv
+
+!AfeLoop
+LoopVol:55
+Txdevice:31
+Rxdevice:30
+
+enable
+TX_DEC2 Volume:102
+TX DEC2 MUX:SWR_MIC
+TX SMIC MUX2:ADC1
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC2:1
+ADC2_MIXER Switch:1
+ADC2 MUX:INP3
+
+aw882xx_mode_switch_l:Rcv
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC2 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC2 MUX:ZERO
+TX SMIC MUX2:ZERO
+TX_AIF1_CAP Mixer DEC2:0
+ADC2_MIXER Switch:0
+ADC2 MUX:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+
+
+tc 57
+# mic3(AMIC3) to Left Rcv
+# AFE loopback mic3 to Left Rcv
+
+!AfeLoop
+LoopVol:55
+Txdevice:31
+Rxdevice:30
+
+enable
+TX_DEC5 Volume:102
+TX DEC5 MUX:SWR_MIC
+TX SMIC MUX5:ADC2
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC5:1
+ADC3_MIXER Switch:1
+ADC3 MUX:INP4
+
+aw882xx_mode_switch_l:Rcv
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC5 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC5 MUX:ZERO
+TX SMIC MUX5:ZERO
+TX_AIF1_CAP Mixer DEC5:0
+ADC3_MIXER Switch:0
+ADC3 MUX:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+
+
+tc 58
+# mic4(AMIC4) to Left Rcv
+# AFE loopback mic4 to Left Rcv
+
+!AfeLoop
+LoopVol:55
+Txdevice:31
+Rxdevice:30
+
+enable
+TX_DEC3 Volume:102
+TX DEC3 MUX:SWR_MIC
+TX SMIC MUX3:ADC3
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC3:1
+ADC4_MIXER Switch:1
+ADC4 MUX:INP5
+
+aw882xx_mode_switch_l:Rcv
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC3 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC3 MUX:ZERO
+TX SMIC MUX3:ZERO
+TX_AIF1_CAP Mixer DEC3:0
+ADC4_MIXER Switch:0
+ADC4 MUX:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+
+
+tc 59
+# button mic1(AMIC1) to Left Speaker
+# AFE loopback button mic to Left spk
+
+!AfeLoop
+LoopVol:55
+Txdevice:31
+Rxdevice:0
+
+enable
+
+TX_DEC1 Volume:102
+TX DEC1 MUX:SWR_MIC
+TX SMIC MUX1:ADC0
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC1:1
+ADC1_MIXER Switch:1
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC1 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC1 MUX:ZERO
+TX SMIC MUX1:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC1:0
+ADC1_MIXER Switch:0
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+
+
+tc 60
+# mic2(AMIC2) to Left Speaker
+# AFE loopback mic2 to Left spk
+
+!AfeLoop
+LoopVol:55
+Txdevice:31
+Rxdevice:0
+
+enable
+TX_DEC2 Volume:102
+TX DEC2 MUX:SWR_MIC
+TX SMIC MUX2:ADC1
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC2:1
+ADC2_MIXER Switch:1
+ADC2 MUX:INP3
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC2 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC2 MUX:ZERO
+TX SMIC MUX2:ZERO
+TX_AIF1_CAP Mixer DEC2:0
+ADC2_MIXER Switch:0
+ADC2 MUX:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+
+
+tc 61
+# mic3(AMIC3) to Left Speaker
+# AFE loopback mic3 to Left spk
+
+!AfeLoop
+LoopVol:50
+Txdevice:31
+Rxdevice:0
+
+enable
+TX_DEC5 Volume:90
+TX DEC5 MUX:SWR_MIC
+TX SMIC MUX5:ADC2
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC5:1
+ADC3_MIXER Switch:1
+ADC3 MUX:INP4
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC5 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC5 MUX:ZERO
+TX SMIC MUX5:ZERO
+TX_AIF1_CAP Mixer DEC5:0
+ADC3_MIXER Switch:0
+ADC3 MUX:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+
+
+tc 62
+# mic4(AMIC4) to Left Speaker
+# AFE loopback mic4 to Left spk
+
+!AfeLoop
+LoopVol:50
+Txdevice:31
+Rxdevice:0
+
+enable
+TX_DEC3 Volume:100
+TX DEC3 MUX:SWR_MIC
+TX SMIC MUX3:ADC3
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC3:1
+ADC4_MIXER Switch:1
+ADC4 MUX:INP5
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC3 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC3 MUX:ZERO
+TX SMIC MUX3:ZERO
+TX_AIF1_CAP Mixer DEC3:0
+ADC4_MIXER Switch:0
+ADC4 MUX:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+
+
+tc 63
+# button mic1(AMIC1) to Right Speaker
+# AFE loopback button mic to Right spk
+
+!AfeLoop
+LoopVol:45
+Txdevice:31
+Rxdevice:0
+
+enable
+TX_DEC1 Volume:100
+TX DEC1 MUX:SWR_MIC
+TX SMIC MUX1:ADC0
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC1:1
+ADC1_MIXER Switch:1
+
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC1 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC1 MUX:ZERO
+TX SMIC MUX1:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC1:0
+ADC1_MIXER Switch:0
+
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:Off
+
+
+tc 64
+# mic2(AMIC2) to Right Speaker
+# AFE loopback mic2 to Right spk
+
+!AfeLoop
+LoopVol:55
+Txdevice:31
+Rxdevice:0
+
+enable
+TX_DEC2 Volume:90
+TX DEC2 MUX:SWR_MIC
+TX SMIC MUX2:ADC1
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC2:1
+ADC2_MIXER Switch:1
+ADC2 MUX:INP3
+
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC2 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC2 MUX:ZERO
+TX SMIC MUX2:ZERO
+TX_AIF1_CAP Mixer DEC2:0
+ADC2_MIXER Switch:0
+ADC2 MUX:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:Off
+
+
+tc 65
+# mic3(AMIC3) to Right Speaker
+# AFE loopback mic3 to Right spk
+
+!AfeLoop
+LoopVol:55
+Txdevice:31
+Rxdevice:0
+
+enable
+TX_DEC5 Volume:102
+TX DEC5 MUX:SWR_MIC
+TX SMIC MUX5:ADC2
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC5:1
+ADC3_MIXER Switch:1
+ADC3 MUX:INP4
+
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC5 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC5 MUX:ZERO
+TX SMIC MUX5:ZERO
+TX_AIF1_CAP Mixer DEC5:0
+ADC3_MIXER Switch:0
+ADC3 MUX:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:Off
+
+
+tc 66
+# mic4(AMIC4) to Right Speaker
+# AFE loopback mic4 to Right spk
+
+!AfeLoop
+LoopVol:50
+Txdevice:31
+Rxdevice:0
+
+enable
+TX_DEC3 Volume:90
+TX DEC3 MUX:SWR_MIC
+TX SMIC MUX3:ADC3
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC3:1
+ADC4_MIXER Switch:1
+ADC4 MUX:INP5
+
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+QUIN_MI2S_RX_DL_HL Switch:1
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX_DEC3 Volume:68
+QUIN_MI2S_RX_DL_HL Switch:0
+QUIN_MI2S_RX Port Mixer TX_CDC_DMA_TX_3:0
+
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+TX DEC3 MUX:ZERO
+TX SMIC MUX3:ZERO
+TX_AIF1_CAP Mixer DEC3:0
+ADC4_MIXER Switch:0
+ADC4 MUX:ZERO
+TX_CDC_DMA_TX_3 Channels:One
+
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:Off
+
+
+tc 69
+# bottom mic    --> receiver/HAC
+!AfeLoop
+LoopVol:55
+Txdevice:31
+Rxdevice:30
+
+enable
+RX_MACRO RX0 MUX:AIF1_PB
+RX_CDC_DMA_RX_0 Channels:One
+RX INT0_1 MIX1 INP0:RX0
+RX INT0 DEM MUX:CLSH_DSM_OUT
+EAR_RDAC Switch:1
+RDAC3_MUX:RX1
+RX_EAR Mode:ON
+
+TX DEC1 MUX:SWR_MIC
+TX SMIC MUX1:ADC0
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC1:1
+ADC1_MIXER Switch:1
+TX_DEC1 Volume:102
+
+RX_CDC_DMA_RX_0_DL_HL Switch:1
+RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3:1
+
+disable
+RX_CDC_DMA_RX_0_DL_HL Switch:0
+RX_CDC_DMA_RX_0 Port Mixer TX_CDC_DMA_TX_3:0
+
+TX_DEC1 Volume:68
+TX DEC1 MUX:ZERO
+TX SMIC MUX1:ZERO
+TX_AIF1_CAP Mixer DEC1:0
+ADC1_MIXER Switch:0
+TX_CDC_DMA_TX_3 Channels:One
+
+RX_MACRO RX0 MUX:AIF1_PB
+RX INT0_1 MIX1 INP0:RX0
+RX_CDC_DMA_RX_0 Channels:One
+RX INT0 DEM MUX:CLSH_DSM_OUT
+EAR_RDAC Switch:0
+RDAC3_MUX:RX1
+RX_EAR Mode:OFF
+
+
+tc 1004
+#EarPiece
+!Playback
+Rxdevice:0
+
+enable
+QUIN_MI2S_RX Channels:One
+aw882xx_mode_switch_l:Rcv
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+
+disable
+QUIN_MI2S_RX Channels:One
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+
+
+tc 1104
+#Left Speaker
+!Playback
+Rxdevice:0
+
+enable
+QUIN_MI2S_RX Channels:One
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+
+disable
+QUIN_MI2S_RX Channels:One
+aw882xx_mode_switch_l:Spk
+aw882xx_pa_switch_l:Off
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+
+
+tc 1155
+#Right Speaker
+!Playback
+Rxdevice:0
+
+enable
+QUIN_MI2S_RX Channels:One
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:On
+QUIN_MI2S_RX Audio Mixer MultiMedia1:1
+
+disable
+QUIN_MI2S_RX Channels:One
+aw882xx_mode_switch_r:Spk
+aw882xx_pa_switch_r:Off
+QUIN_MI2S_RX Audio Mixer MultiMedia1:0
+
+
+tc 1200
+#AMIC1
+!Capture
+Txdevice:0
+
+enable
+TX DEC1 MUX:SWR_MIC
+TX SMIC MUX1:ADC0
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC1:1
+ADC1_MIXER Switch:1
+TX_DEC1 Volume:102
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX DEC1 MUX:ZERO
+TX SMIC MUX1:ZERO
+TX_AIF1_CAP Mixer DEC1:0
+ADC1_MIXER Switch:0
+TX_DEC1 Volume:68
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+
+tc 1253
+#AMIC2
+!Capture
+Txdevice:0
+
+enable
+TX DEC2 MUX:SWR_MIC
+TX SMIC MUX2:ADC1
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC2:1
+ADC2_MIXER Switch:1
+ADC2 MUX:INP3
+TX DEC2 Volume:102
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX DEC2 MUX:ZERO
+TX SMIC MUX2:ZERO
+TX_AIF1_CAP Mixer DEC2:0
+ADC2_MIXER Switch:0
+ADC2 MUX:ZERO
+TX DEC2 Volume:68
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+
+tc 1263
+#AMIC3
+!Capture
+Txdevice:0
+
+enable
+TX DEC5 MUX:SWR_MIC
+TX SMIC MUX5:ADC2
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC5:1
+ADC3_MIXER Switch:1
+ADC3 MUX:INP4
+TX DEC5 Volume:102
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX DEC5 MUX:ZERO
+TX SMIC MUX5:ZERO
+TX_AIF1_CAP Mixer DEC5:0
+ADC3_MIXER Switch:0
+ADC3 MUX:ZERO
+TX DEC5 Volume:68
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0
+
+
+tc 1273
+#AMIC4
+!Capture
+Txdevice:0
+
+enable
+TX DEC3 MUX:SWR_MIC
+TX SMIC MUX3:ADC3
+TX_CDC_DMA_TX_3 Channels:One
+TX_AIF1_CAP Mixer DEC3:1
+ADC4_MIXER Switch:1
+ADC4 MUX:INP5
+TX DEC3 Volume:102
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:1
+
+disable
+TX DEC3 MUX:ZERO
+TX SMIC MUX3:ZERO
+TX_AIF1_CAP Mixer DEC3:0
+ADC4_MIXER Switch:0
+ADC4 MUX:ZERO
+TX DEC3 Volume:68
+MultiMedia1 Mixer TX_CDC_DMA_TX_3:0

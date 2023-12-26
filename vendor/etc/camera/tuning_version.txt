@@ -1,0 +1,7 @@
+imx582_sma_aec=8
+imx582_sma_awb=9
+imx582_sma_af=3
+imx582_sma_noise=5
+imx582_sma_video=3
+imx582_sma_highpixel=4
+imx582_sma_2nd_af=3
