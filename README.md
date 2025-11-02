@@ -1,0 +1,14 @@
+# FP4-user 15 FP4.QREL.15.14.3 15.14.3 release-keys
+- manufacturer: fairphone
+- platform: lito
+- codename: FP4
+- flavor: FP4-user
+- release: 15
+- id: FP4.QREL.15.14.3
+- incremental: 15.14.3
+- tags: release-keys
+- fingerprint: Fairphone/FP4eea/FP4:11/FP4.QREL.14.28.3/14.28.3:user/release-keys
+- is_ab: true
+- brand: Fairphone
+- branch: FP4-user-15-FP4.QREL.15.14.3-15.14.3-release-keys
+- repo: fairphone_fp4_dump
