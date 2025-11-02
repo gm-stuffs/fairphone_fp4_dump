@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<!--
+This XML file declares which signature|privileged permissions should be granted to the privileged
+application ServiceMenu.
+-->
+<permissions>
+
+    <!-- AppEnabler -->
+    <privapp-permissions package="de.telekom.tsc">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.PACKAGE_VERIFICATION_AGENT"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+    </privapp-permissions>
+
+    <!-- AppSelector -->
+    <privapp-permissions package="com.aura.oobe.deutsche">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </privapp-permissions>
+
+    <!-- App Starter -->
+    <privapp-permissions package="de.telekom.appstarter">
+        <permission name="android.permission.POST_NOTIFICATIONS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.google.android.euicc">
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <permission name="android.permission.FOREGROUND_SERVICE"/>
+        <permission name="android.permission.INTERNET"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.REBOOT"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+        <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
+        <permission name="android.permission.START_FOREGROUND_SERVICES_FROM_BACKGROUND"/>
+        <permission name="android.permission.VIBRATE"/>
+        <permission name="android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="com.android.permission.INSTALL_EXISTING_PACKAGES" />
+        <permission name="com.android.permission.WRITE_EMBEDDED_SUBSCRIPTIONS"/>
+        <permission name="com.google.android.setupwizard.SETUP_COMPAT_SERVICE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.fairphone.activator">
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.ACCESS_WIFI_STATE"/>
+        <permission name="android.permission.INTERNET"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    </privapp-permissions>
+
+   <privapp-permissions package="com.tct.iris">
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.fairphone.myfairphone">
+        <permission name="android.permission.ACCESS_NETWORK_STATE"/>
+        <permission name="android.permission.ACCESS_WIFI_STATE"/>
+        <permission name="android.permission.CHANGE_NETWORK_STATE"/>
+        <permission name="android.permission.CHANGE_WIFI_STATE"/>
+        <permission name="android.permission.INTERNET"/>
+        <permission name="android.permission.READ_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.orange.update">
+        <permission name="android.permission.INSTALL_PACKAGES" />
+        <permission name="android.permission.DELETE_PACKAGES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.orange.aura.oobe">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+    </privapp-permissions>
+</permissions>
