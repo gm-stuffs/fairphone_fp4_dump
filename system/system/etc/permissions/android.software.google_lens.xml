@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <!-- Declare support for Google Lens. -->
+    <feature name="com.google.lens.feature.CAMERA_INTEGRATION" />
+    <feature name="com.google.lens.feature.IMAGE_INTEGRATION" />
+</permissions>

@@ -1,0 +1,21 @@
+####################################
+# from generate-common-build-props
+# These properties identify this partition image.
+####################################
+ro.product.system_dlkm.brand=Fairphone
+ro.product.system_dlkm.device=FP4
+ro.product.system_dlkm.manufacturer=Fairphone
+ro.product.system_dlkm.model=FP4
+ro.product.system_dlkm.name=FP4
+ro.system_dlkm.build.date=Mon Dec 29 16:25:31 CET 2025
+ro.system_dlkm.build.date.utc=1767021931
+ro.system_dlkm.build.fingerprint=Fairphone/FP4eea/FP4:15/FP4.SREL.15.14.4/15.14.4:user/release-keys
+ro.system_dlkm.build.id=FP4.SREL.15.14.4
+ro.system_dlkm.build.tags=release-keys
+ro.system_dlkm.build.type=user
+ro.system_dlkm.build.version.incremental=15.14.4
+ro.system_dlkm.build.version.release=15
+ro.system_dlkm.build.version.release_or_codename=15
+ro.system_dlkm.build.version.sdk=35
+# end of file
+
