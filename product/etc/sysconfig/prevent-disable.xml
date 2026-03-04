@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Prevent disabling of specified apps -->
+<config>
+    <prevent-disable package="com.google.android.apps.setupwizard.searchselector" />
+</config>
